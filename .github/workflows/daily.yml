@@ -2,6 +2,7 @@ name: 매일트렌드검색
 on:
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   트렌드찾기:
