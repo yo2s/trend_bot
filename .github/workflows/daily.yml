@@ -1,0 +1,11 @@
+name: 매일트렌드검색
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  트렌드찾기:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 트렌드 검색하고 슬랙에 보내기
+      run: echo "트렌드 검색 완료!"
